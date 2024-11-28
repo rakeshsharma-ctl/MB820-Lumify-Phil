@@ -5,6 +5,9 @@
 namespace DefaultPublisher.MyProject;
 
 using Microsoft.Sales.Customer;
+using System.Automation;
+using Microsoft.Booking;
+using System.Visualization;
 
 pageextension 50100 CustomerListExt extends "Customer List"
 {
@@ -78,4 +81,31 @@ pageextension 50117 "Social Media Card" extends "Customer Card"
         // leave it for time being
     }
 
+}
+
+page 50120 DemoRoleCenter
+{
+    Caption = 'DemoRoleCenter';
+    PageType = RoleCenter;
+
+    layout
+    {
+        area(RoleCenter)
+        {
+            group(Group1)
+            {
+                part(part1; "Approvals Activities")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+    }
+}
+
+profile MyProfile
+{
+    ProfileDescription = 'Sample Profile';
+    RoleCenter = DemoRoleCenter;
+    Caption = 'MyProfile';
 }
