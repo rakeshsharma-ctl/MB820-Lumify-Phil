@@ -1,3 +1,6 @@
+// put the id 50101 in launch json file to run this page
+// this page is used to list all the books
+
 page 50101 BookList
 {
     Caption = 'List of Books';

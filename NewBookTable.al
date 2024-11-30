@@ -1,3 +1,6 @@
+// This table stores book information including book number, name, author, page count,
+// sellability status, Instagram ID for social media reference, and a rating enum.
+// It serves as the main data structure for the book management system.
 table 50100 NewBookTable
 {
     DataClassification = ToBeClassified;

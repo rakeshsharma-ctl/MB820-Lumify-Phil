@@ -1,3 +1,5 @@
+// this page is used to view and edit the book details
+
 page 50100 BookCard
 {
     PageType = Card;

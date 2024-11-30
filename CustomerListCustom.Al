@@ -1,3 +1,4 @@
+// this profile is used to add fields to the customer list page
 profile BookProfile
 {
     Description = 'Book Profile';

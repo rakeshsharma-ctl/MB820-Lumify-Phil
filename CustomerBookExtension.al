@@ -1,3 +1,4 @@
+// this extension is used to add fields to the customer table
 tableextension 50100 CustomerBookExtention extends Customer
 {
     fields
