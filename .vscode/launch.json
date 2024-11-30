@@ -1,19 +1,37 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "Microsoft cloud sandbox",
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
             "environmentName": "Sid2",
-            "startupObjectId": 22,
+            "startupObjectId": 50112,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true
+        },
+        {
+            "name": "AL: Generated Download Symbols request",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Sid2",
+            "tenant": "3415b6fe-2a54-4ef6-9fa9-e2cbf1c329d8"
+        },
+        {
+            "name": "AL: Generated Attach request",
+            "request": "attach",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "Sid2",
+            "sessionId": 8460,
+            "breakOnNext": "WebClient",
+            "breakOnError": "ExcludeTry",
+            "tenant": "3415b6fe-2a54-4ef6-9fa9-e2cbf1c329d8"
         }
     ]
 }
