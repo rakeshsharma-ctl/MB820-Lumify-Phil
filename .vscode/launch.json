@@ -1,3 +1,15 @@
+// This is the launch configuration for the AL code in Business Central
+// This launch.json file configures debugging settings for AL development in Business Central
+// It contains three configurations:
+// 1. "Microsoft cloud sandbox" - Main development configuration for debugging AL code
+//    - Uses a sandbox environment named "Sid2"
+//    - Starts with Page 50112 as the startup object
+//    - Enables SQL debugging features
+// 2. "AL: Generated Download Symbols request" - Configuration for downloading symbols
+//    - Used for symbol management in the sandbox environment
+// 3. "AL: Generated Attach request" - Configuration for attaching to running sessions
+//    - Allows debugging of specific user sessions
+//    - Includes specific tenant and session information
 {
     "version": "0.2.0",
     "configurations": [
@@ -7,6 +19,7 @@
             "type": "al",
             "environmentType": "Sandbox",
             "environmentName": "Sid2",
+            // This is the page number that will be loaded when the debugging session starts
             "startupObjectId": 50112,
             "startupObjectType": "Page",
             "breakOnError": "All",
